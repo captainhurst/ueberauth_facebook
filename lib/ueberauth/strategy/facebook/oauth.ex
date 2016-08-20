@@ -47,7 +47,8 @@ defmodule Ueberauth.Strategy.Facebook.OAuth do
 
   def get_token!(params \\ [], opts \\ []) do
     IO.puts "Get Token Function"
-    IO.inspect params
+    p = [code: params]
+    IO.inspect p
     IO.puts "----------"
     opts
     |> client
